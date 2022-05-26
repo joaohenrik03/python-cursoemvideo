@@ -1,4 +1,5 @@
 from time import sleep
+
 opcao = 0
 num1 = float(input('Digite um número: '))
 num2 = float(input('Digite outro número: '))
@@ -35,6 +36,7 @@ while opcao != 5:
         num2 = float(input('Digite outro número: '))
     elif opcao > 5:
         print('Ops, opção inválido, tente novamente!')
+
 print('Saindo...')
 sleep(2)
 
