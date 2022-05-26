@@ -1,10 +1,11 @@
 primeiroTermo = int(input('Primeiro termo: '))
 razao = int(input('Razão: '))
-enesimoTermo = primeiroTermo + (10-1) * razao
-count = primeiroTermo
+termo = primeiroTermo
+count = 1
 
-while count < enesimoTermo+razao:
-    print('{}'.format(count), end=" -> ")
-    count += razao
+while count <= 10:
+    print('{}'.format(termo), end=" -> ")
+    termo += razao
+    count += 1
 
 print('Acabou!')
