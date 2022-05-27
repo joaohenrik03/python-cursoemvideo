@@ -1,3 +1,5 @@
+# Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o maior e o menor peso lidos.
+
 maior = 0
 manor = 0
 for cont in range(0, 5):

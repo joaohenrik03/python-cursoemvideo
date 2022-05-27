@@ -1,4 +1,8 @@
+# Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações
+# possiveis sobre ela.
+
 obj = input('\033[97mDigite algo: ')
+
 print(type(obj))
 print('\033[31mÉ numérico? \033[97m{}'.format(obj.isnumeric()))
 print('\033[32mÉ um alfanúmero? \033[97m{}'.format(obj.isalnum()))

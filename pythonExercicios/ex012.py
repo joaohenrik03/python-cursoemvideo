@@ -1,3 +1,5 @@
+# Faça um algoritmo que leia o preço de um produto e mostre seu novo preço com 5% de desconto.
+
 valorProduto = float(input('\033[97mQual o valor do produto que deseja comprar? '))
 descontoCinco = (valorProduto / 100) * 5
 descontoTot = valorProduto - descontoCinco

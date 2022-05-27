@@ -1,8 +1,4 @@
-#num = str(input('Digite um número de 0 a 9999: '))
-#print('Unidade: {}'.format(num[3:]))
-#print('Dezena: {}'.format(num[2:3]))
-#print('Centena: {}'.format(num[1:2]))
-#print('Milhar: {}'.format(num[:1]))
+# Faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos dígitos separados.
 
 num = int(input('Digite um número de 0 a 9999: '))
 uni = num // 1 % 10

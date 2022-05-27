@@ -1,3 +1,5 @@
+# Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.
+
 num = int(input('\033[97mDigite um número: '))
 x2 = num * 2
 x3 = num * 3
