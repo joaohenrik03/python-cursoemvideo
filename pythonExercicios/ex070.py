@@ -27,7 +27,7 @@ while True:
     total += valorProduto
 
     continuar = ' '
-    while continuar != 'S' and continuar != 'N':
+    while continuar not in 'SN':
         continuar = str(input('Quer continuar? [S/N] ')).strip().upper()
     if continuar == 'N':
         break
