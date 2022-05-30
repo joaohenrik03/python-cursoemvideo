@@ -9,9 +9,9 @@ numPc = numJogador = jogosGanhos = 0
 while True:
     print('-=-' * 15)
     numPc = random.randint(1, 2)
-    escolha = str(input('Par ou ímpar [P/I]: '))
+    escolha = str(input('Par ou ímpar [P/I]: ')).strip().upper()
 
-    if escolha.upper() != 'P' and escolha.upper() != 'I':
+    if escolha != 'P' and escolha != 'I':
         print('[Erro], escolha inválida, o programa será encerrado!')
         break
 
@@ -28,7 +28,7 @@ while True:
     res = (numPc + numJogador) % 2
 
     print('-=-' * 15)
-    if escolha.upper() == 'P':
+    if escolha == 'P':
         if res == 0:
             jogosGanhos += 1
             print(f'Você jogou {numJogador} e seu adversário jogou {numPc}, total {numJogador + numPc} é PAR!\n'
@@ -36,7 +36,7 @@ while True:
         else:
             print(f'Você jogou {numJogador} e seu adversário jogou {numPc}, total {numJogador + numPc} é ÍMPAR!')
             break
-    elif escolha.upper() == 'I':
+    elif escolha == 'I':
         if res == 1:
             jogosGanhos += 1
             print(f'Você jogou {numJogador} e seu adversário jogou {numPc}, total {numJogador + numPc} é ÍMPAR!\n'
