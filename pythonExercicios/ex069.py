@@ -8,9 +8,7 @@ print('-=-' * 10)
 print('CADASTRE UMA PESSOA')
 
 idade = deMaior = homens = mulheresMenorDeVinte = 0
-sexo = continuar = ''
 while True:
-    sexo = ''
     print('-=-' * 10)
     idade = int(input('Idade: '))
     if idade < 0:
@@ -18,6 +16,7 @@ while True:
     elif idade >= 18:
         deMaior += 1
 
+    sexo = ' '
     while sexo != 'M' and sexo != 'F':
         sexo = str(input('Sexo [M/F]: ')).strip().upper()
         if sexo == 'M':
@@ -27,7 +26,9 @@ while True:
     if sexo == 'F' and idade < 20:
         mulheresMenorDeVinte += 1
 
-    continuar = str(input('Quer continuar? [S/N] ')).strip().upper()
+    continuar = ' '
+    while continuar != 'S' and continuar != 'N':
+        continuar = str(input('Quer continuar? [S/N] ')).strip().upper()
     if continuar == 'N':
         break
 
